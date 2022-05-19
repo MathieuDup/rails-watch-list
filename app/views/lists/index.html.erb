@@ -1,0 +1,10 @@
+<div class="banner-container">
+    <h2>My Lists</h2>
+<div class="div cards-flex row">
+    <% @lists.each do |list| %>
+      <div class="card-category col-3 mt-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1568876694728-451bbf694b83?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232)">
+        <%= link_to list.name, list_url(list) %>
+      </div>
+    <% end %>
+  </div>
+</div>

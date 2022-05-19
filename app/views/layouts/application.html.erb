@@ -11,6 +11,14 @@
   </head>
 
   <body>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1536440136628-849c177e76a1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2825);">
+      <div class="banner-container">
+        <h1>Welcome to <strong>Movies List</strong> !</h1>
+        <p>Create and manage lists for all your favorites movies.</p>
+        <%= link_to "Create a list", new_list_path, class: "btn btn-flat" %>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>
